@@ -1,1 +1,356 @@
-<p>hello world</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smith – UI/UX Designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"/>
+  <!-- Boxicons for icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ======================== NAVBAR ======================== -->
+  <header class="navbar">
+    <div class="nav-logo">
+      <span class="logo-circle">S</span>
+      <span class="logo-name">Smith</span>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Project</a>
+    </nav>
+    <a href="#contact" class="btn-contact">Contact me</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <i class='bx bx-menu'></i>
+    </button>
+  </header>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-tag">Hello There! 👋</div>
+      <h1 class="hero-title">I'm <span class="highlight">Smith</span>,<br/>UI/UX Designer.</h1>
+      <p class="hero-desc">I'm a UI/UX designer who designs complex but simple, user-friendly and aesthetically astonishing web and app UI systems and templates for years.</p>
+      <div class="hero-btns">
+        <a href="#portfolio" class="btn-primary">View my Portfolio</a>
+        <a href="#about" class="btn-outline">Hire Me</a>
+      </div>
+    </div>
+    <div class="hero-image-wrap">
+      <div class="badge badge-product"><i class='bx bx-palette'></i> Product Designer</div>
+      <div class="badge badge-ux"><i class='bx bx-devices'></i> UI/UX Designer</div>
+      <div class="hero-img-circle">
+        <img src="assets/image 1.png" alt="Smith">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== MARQUEE STRIP 1 ======================== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>✦ App Design</span><span>✦ Web Design</span><span>✦ Prototype</span><span>✦ Dashboard</span>
+      <span>✦ App Design</span><span>✦ Web Design</span><span>✦ Prototype</span><span>✦ Dashboard</span>
+      <span>✦ App Design</span><span>✦ Web Design</span><span>✦ Prototype</span><span>✦ Dashboard</span>
+    </div>
+  </div>
+
+  <!-- ======================== ABOUT ME ======================== -->
+  <section class="about section" id="about">
+    <div class="about-img-wrap">
+      <div class="about-img-circle">
+        <img src="assets/image 2.png" alt="Smith">
+         </div>
+      </div>
+      
+    </div>
+    <div class="about-content">
+      <p class="section-eyebrow">About Me</p>
+      <h2 class="section-title">About <span class="highlight">Me</span></h2>
+      <p class="about-text">I'm a UI/UX Designer who creates complex but simple, user-friendly and aesthetically stunning app and web UI systems and templates. Having a strong understanding of design principles and a passion for creating engaging digital experiences, I strive to deliver designs that not only look good but also feel good to use.</p>
+      <div class="about-stats">
+        <div class="stat"><strong>50+</strong><span>Project Completed</span></div>
+        <div class="stat"><strong>05+</strong><span>Years of Experience</span></div>
+      </div>
+      <a href="#" class="btn-primary">Download CV <i class='bx bx-download'></i></a>
+    </div>
+  </section>
+
+  <!-- ======================== TOOLS ======================== -->
+  <section class="tools section">
+    <p class="section-eyebrow center">My Favorite Tools</p>
+    <h2 class="section-title center">Behind my <span class="highlight">Design</span></h2>
+    <div class="tools-grid">
+      <!-- Figma -->
+      <div class="tool-card">
+        <div class="tool-logo">
+          <svg viewBox="0 0 38 57" width="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z" fill="#1ABCFE"/>
+            <path d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 0 1-19 0z" fill="#0ACF83"/>
+            <path d="M19 0v19h9.5a9.5 9.5 0 0 0 0-19H19z" fill="#FF7262"/>
+            <path d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z" fill="#F24E1E"/>
+            <path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z" fill="#A259FF"/>
+          </svg>
+        </div>
+        <div class="tool-bar"><div class="tool-fill" style="width:98%"></div></div>
+        <p class="tool-pct">98%</p>
+        <p class="tool-name">Figma</p>
+      </div>
+      <!-- Photoshop -->
+      <div class="tool-card">
+        <div class="tool-logo">
+          <svg viewBox="0 0 96 96" width="56" xmlns="http://www.w3.org/2000/svg">
+            <rect width="96" height="96" rx="16" fill="#001E36"/>
+            <path d="M22 68V28h16c4 0 7 1 9.5 3s3.5 5 3.5 9c0 4.3-1.2 7.5-3.7 9.7S41 53 37 53H30v15H22zm8-22h7c2.3 0 4-.6 5.1-1.8 1.1-1.2 1.7-3 1.7-5.3 0-2.2-.5-3.8-1.6-4.9C41.1 32.9 39.5 32 37 32H30v14zM60 68.6c-2.7 0-5-.5-6.9-1.5-1.9-1-3.3-2.5-4.3-4.5L55 59c.8 1.5 1.7 2.5 2.7 3.1 1 .6 2.2.9 3.5.9 1.4 0 2.5-.3 3.2-1 .7-.6 1-1.5 1-2.5 0-.8-.2-1.5-.7-2-.5-.5-1.5-1-3.1-1.5l-2.5-.8c-2.5-.8-4.4-1.9-5.6-3.4-1.2-1.4-1.8-3.2-1.8-5.3 0-1.7.4-3.2 1.3-4.5.9-1.3 2.1-2.3 3.7-3 1.6-.7 3.4-1 5.5-1 2.4 0 4.5.5 6.2 1.4 1.7 1 3 2.3 3.8 4l-5.5 3.3c-.7-1.1-1.4-1.9-2.2-2.4-.8-.5-1.7-.7-2.8-.7-1.2 0-2 .2-2.7.8-.6.5-1 1.2-1 2.1 0 .7.2 1.3.7 1.8.5.5 1.4 1 2.8 1.4l2.6.8c2.8.9 4.8 2 6 3.5 1.2 1.4 1.8 3.2 1.8 5.5 0 2.7-1 4.8-2.9 6.4-1.9 1.6-4.5 2.4-7.8 2.4z" fill="#31A8FF"/>
+          </svg>
+        </div>
+        <div class="tool-bar"><div class="tool-fill" style="width:92%"></div></div>
+        <p class="tool-pct">92%</p>
+        <p class="tool-name">PhotoShop</p>
+      </div>
+      <!-- Sketch -->
+      <div class="tool-card">
+        <div class="tool-logo">
+          <svg viewBox="0 0 200 180" width="60" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="100,0 200,60 165,180 35,180 0,60" fill="#FDB300"/>
+            <polygon points="100,0 155,60 100,180 45,60" fill="#EA6C00" opacity="0.6"/>
+            <polygon points="100,0 200,60 155,60" fill="#FDAD00"/>
+            <polygon points="100,0 45,60 0,60" fill="#FDAD00"/>
+            <polygon points="0,60 45,60 35,180" fill="#FDD231"/>
+            <polygon points="200,60 165,180 155,60" fill="#FDD231"/>
+          </svg>
+        </div>
+        <div class="tool-bar"><div class="tool-fill" style="width:85%"></div></div>
+        <p class="tool-pct">85%</p>
+        <p class="tool-name">Sketch</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== MARQUEE STRIP 2 ======================== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>✦ App Design</span><span>✦ Web Design</span><span>✦ Prototype</span><span>✦ Dashboard</span>
+      <span>✦ App Design</span><span>✦ Web Design</span><span>✦ Prototype</span><span>✦ Dashboard</span>
+      <span>✦ App Design</span><span>✦ Web Design</span><span>✦ Prototype</span><span>✦ Dashboard</span>
+    </div>
+  </div>
+
+  <!-- ======================== SERVICES ======================== -->
+  <section class="services section" id="services">
+    <p class="section-eyebrow center">SERVICES</p>
+    <h2 class="section-title center">Services <span class="highlight">I</span> Provide!</h2>
+    <a href="#" class="btn-primary view-all-btn">View All Services <i class='bx bx-right-arrow-alt'></i></a>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><i class='bx bx-layout'></i></div>
+        <h3>UI/UX Design</h3>
+        <p>Create stunning and intuitive interfaces that elevate user experience with a focus on user needs.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class='bx bx-mobile-alt'></i></div>
+        <h3>Application Design</h3>
+        <p>Create powerful and engaging mobile app experiences with pixel-perfect UI and fluid UX interactions.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class='bx bx-desktop'></i></div>
+        <h3>Website Design</h3>
+        <p>From prototype to website, I design, evaluate, website and create aesthetically engaging experiences.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class='bx bx-customize'></i></div>
+        <h3>UI Design</h3>
+        <p>Design beautiful, modern interfaces that are visually appealing and easy to navigate for all users.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class='bx bx-copy-alt'></i></div>
+        <h3>Wi Framing</h3>
+        <p>I lay out your digital products structure clearly and carefully before any visual design work starts.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class='bx bx-cog'></i></div>
+        <h3>System Design</h3>
+        <p>Build scalable, coherent design systems that unify your brand and accelerate the product design workflow.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FAQ ======================== -->
+  <section class="faq section" id="faq">
+    <p class="section-eyebrow center">FAQs</p>
+    <h2 class="section-title center">Question? <span class="highlight">LOOK here</span></h2>
+    <div class="faq-list">
+      <div class="faq-item active">
+        <button class="faq-q">What services do you offer as a UI/UX designer?<i class='bx bx-chevron-down faq-icon'></i></button>
+        <div class="faq-a"><p>I offer a full range of UI/UX design services including user research, wireframing, prototyping, visual design, and usability testing for web and mobile applications.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Which tools and technologies do you use?<i class='bx bx-chevron-down faq-icon'></i></button>
+        <div class="faq-a"><p>I primarily use Figma, Adobe Photoshop, and Sketch for design. For prototyping, I use Figma's built-in prototyping tools along with InVision and Framer.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you create complete websites or just designs?<i class='bx bx-chevron-down faq-icon'></i></button>
+        <div class="faq-a"><p>I primarily focus on design, but I can collaborate closely with developers to ensure the final product matches the design specifications perfectly.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How long does a typical design project take?<i class='bx bx-chevron-down faq-icon'></i></button>
+        <div class="faq-a"><p>Project timelines vary based on complexity. A simple landing page may take 1–2 weeks, while a full app design can take 4–8 weeks including research, iteration, and final delivery.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== MARQUEE STRIP 3 ======================== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>✦ App Design</span><span>✦ Web Design</span><span>✦ Prototype</span><span>✦ Dashboard</span>
+      <span>✦ App Design</span><span>✦ Web Design</span><span>✦ Prototype</span><span>✦ Dashboard</span>
+      <span>✦ App Design</span><span>✦ Web Design</span><span>✦ Prototype</span><span>✦ Dashboard</span>
+    </div>
+  </div>
+
+  <!-- ======================== PORTFOLIO ======================== -->
+  <section class="portfolio section" id="portfolio">
+    <p class="section-eyebrow">My Portfolio</p>
+    <div class="portfolio-header">
+      <h2 class="section-title">My Latest <span class="highlight">Projects</span></h2>
+      <a href="#" class="btn-primary">View All Projects <i class='bx bx-right-arrow-alt'></i></a>
+    </div>
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <div class="port-img-placeholder p1">
+          <div class="port-mockup">
+         
+            <img src="assets/image 5.png" alt="food app" class="hero-photo1">
+            
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <div class="port-img-placeholder p2">
+          <div class="port-mockup">
+           <img src="assets/image 6.png" alt="coffee shop app design " class="hero-photo1">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CTA ======================== -->
+  <section class="cta-section">
+    <h2>Let's Create an <span class="highlight">Amazing</span><br/>Project Together!</h2>
+    <a href="#contact" class="btn-primary cta-btn">Contact Us Now <i class='bx bx-right-arrow-alt'></i></a>
+    <div class="cta-tags">
+      <span class="ctag">Innovative Design</span>
+      <span class="ctag">Prototype</span>
+      <span class="ctag">UI/UX Design</span>
+      <span class="ctag">Design System</span>
+      <span class="ctag">ui/ux design</span>
+      <span class="ctag">Landing Page</span>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section class="contact section" id="contact">
+    <div class="contact-info">
+      <p class="section-eyebrow">Contact Us</p>
+      <h2 class="section-title">Let's talk for your <span class="highlight">Next Project</span></h2>
+      <p class="contact-sub">Share your ideas and goals, and let's bring them to life together.</p>
+      <div class="contact-details">
+        <div class="contact-item"><i class='bx bx-phone-call'></i><span>+9225000000</span></div>
+        <div class="contact-item"><i class='bx bx-envelope'></i><span>example@gmail.com</span></div>
+        <div class="contact-item"><i class='bx bx-map'></i><span>Ab-Dada Road,<br/>Ab Daba City abc Country</span></div>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <div class="form-row">
+        <div class="form-group"><label>Your Name *</label><input type="text" placeholder="Your Name" required /></div>
+        <div class="form-group"><label>Email *</label><input type="email" placeholder="Your Email" required /></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Phone *</label><input type="text" placeholder="Your Phone" required /></div>
+        <div class="form-group"><label>I'm interested in *</label><input type="text" placeholder="UI/UX Design" /></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Budget Range *</label><input type="text" placeholder="$500 – $1000" /></div>
+        <div class="form-group"><label>Country *</label><input type="text" placeholder="Your Country" /></div>
+      </div>
+      <div class="form-group full-width">
+        <label>Your Message *</label>
+        <textarea placeholder="Write here..." rows="5"></textarea>
+      </div>
+      <button type="submit" class="btn-primary submit-btn">Submit <i class='bx bx-right-arrow-alt'></i></button>
+    </form>
+  </section>
+
+  <!-- ======================== MARQUEE STRIP 4 ======================== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>✦ App Design</span><span>✦ Web Design</span><span>✦ Prototype</span><span>✦ Dashboard</span>
+      <span>✦ App Design</span><span>✦ Web Design</span><span>✦ Prototype</span><span>✦ Dashboard</span>
+      <span>✦ App Design</span><span>✦ Web Design</span><span>✦ Prototype</span><span>✦ Dashboard</span>
+    </div>
+  </div>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <span class="logo-circle">S</span>
+          <span class="logo-name">Smith</span>
+        </div>
+        <p>Creating Custom and visually amazing, UI, Digital Experiences with an artistic approach to UI/UX design for startups.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+          <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+          <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+          <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Project</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">User Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Get in Touch</h4>
+        <p>Subscribe for latest updates</p>
+        <div class="newsletter-input">
+          <input type="email" placeholder="Enter your email" />
+          <button class="newsletter-btn"><i class='bx bx-right-arrow-alt'></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright ©2024 Rights Reserved</p>
+      <div class="footer-links">
+        <a href="#">User Term & Conditions</a>
+        <span>|</span>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
