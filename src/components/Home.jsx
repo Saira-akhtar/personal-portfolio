@@ -53,7 +53,7 @@ const Home = () => {
               </a>
 
               <a
-                href={`${import.meta.env.BASE_URL}Saira_Akhtar_FullStack.pdf`}
+               href="/personal-portfolio/Saira_Akhtar_FullStack.pdf"
                 download="Saira_Akhtar_FullStack.pdf"
                 className="flex items-center gap-2 rounded-lg border border-slate-700 px-6 py-3 font-medium text-slate-200 transition duration-300 hover:border-blue-500 hover:text-blue-500"
               >
