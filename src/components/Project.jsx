@@ -1,6 +1,5 @@
 import {
   FiGithub,
-  
   FiArrowUpRight,
   FiShoppingBag,
   FiCheckSquare,
@@ -8,17 +7,9 @@ import {
   FiBookOpen,
 } from "react-icons/fi";
 
-import {
-  FaReact,
-  FaNodeJs,
-  FaJs,
-} from "react-icons/fa";
+import { FaReact, FaNodeJs, FaJs } from "react-icons/fa";
 
-import {
-  SiMongodb,
-  SiExpress,
-  SiTailwindcss,
-} from "react-icons/si";
+import { SiMongodb, SiExpress, SiTailwindcss } from "react-icons/si";
 
 const Projects = () => {
   const projects = [
@@ -100,7 +91,45 @@ const Projects = () => {
       ],
 
       github: "https://github.com/Saira-akhtar/StyleHive",
-      
+
+      featured: true,
+    },
+    {
+      title: "TaskFlow",
+      category: "Full-Stack Project Management SaaS",
+
+      description:
+        "A full-stack project and task management SaaS platform with secure authentication, role-based access control, workspaces, projects, tasks, Kanban workflows, notifications and dashboard analytics.",
+
+      icon: <FiCheckSquare size={32} />,
+
+      technologies: [
+        {
+          name: "React.js",
+          icon: <FaReact />,
+        },
+        {
+          name: "Node.js",
+          icon: <FaNodeJs />,
+        },
+        {
+          name: "Express.js",
+          icon: <SiExpress />,
+        },
+        {
+          name: "MongoDB",
+          icon: <SiMongodb />,
+        },
+        {
+          name: "Tailwind CSS",
+          icon: <SiTailwindcss />,
+        },
+      ],
+
+      github: "https://github.com/Saira-akhtar/TaskFlow",
+
+      live: "https://taskflow-api-tan.vercel.app/",
+
       featured: true,
     },
 
@@ -133,7 +162,6 @@ const Projects = () => {
       ],
 
       github: "https://github.com/",
-      
 
       featured: true,
     },
@@ -170,15 +198,10 @@ const Projects = () => {
   ];
 
   return (
-    <section
-      id="projects"
-      className="bg-[#111827] px-6 py-24 lg:px-8"
-    >
+    <section id="projects" className="bg-[#111827] px-6 py-24 lg:px-8">
       <div className="mx-auto max-w-7xl">
-
         {/* Heading */}
         <div className="mb-16 text-center">
-
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-blue-500">
             My Work
           </p>
@@ -190,15 +213,13 @@ const Projects = () => {
           <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-blue-600" />
 
           <p className="mx-auto mt-5 max-w-2xl text-slate-400">
-            A selection of projects that demonstrate my experience
-            with frontend, backend and full-stack web development.
+            A selection of projects that demonstrate my experience with
+            frontend, backend and full-stack web development.
           </p>
-
         </div>
 
         {/* Projects Grid */}
         <div className="grid gap-7 lg:grid-cols-2">
-
           {projects.map((project) => (
             <div
               key={project.title}
@@ -206,13 +227,11 @@ const Projects = () => {
                 project.featured ? "lg:col-span-1" : "lg:col-span-2"
               }`}
             >
-
               {/* Top Line */}
               <div className="absolute left-0 top-0 h-1 w-0 bg-blue-600 transition-all duration-500 group-hover:w-full" />
 
               {/* Project Header */}
               <div className="flex items-start justify-between gap-4">
-
                 {/* Icon */}
                 <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-blue-500/10 text-blue-500 transition-all duration-300 group-hover:bg-blue-600 group-hover:text-white">
                   {project.icon}
@@ -223,7 +242,6 @@ const Projects = () => {
                   size={23}
                   className="text-slate-600 transition duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-blue-500"
                 />
-
               </div>
 
               {/* Category */}
@@ -243,47 +261,50 @@ const Projects = () => {
 
               {/* Technologies */}
               <div className="mt-6 flex flex-wrap gap-2">
-
                 {project.technologies.map((technology) => (
                   <span
                     key={technology.name}
                     className="flex items-center gap-2 rounded-lg border border-slate-700 bg-[#111827] px-3 py-2 text-xs text-slate-300 transition hover:border-blue-500/50"
                   >
-                    <span className="text-blue-500">
-                      {technology.icon}
-                    </span>
+                    <span className="text-blue-500">{technology.icon}</span>
 
                     {technology.name}
                   </span>
                 ))}
-
               </div>
 
               {/* Buttons */}
               <div className="mt-7 flex flex-wrap gap-3">
-
+                {/* GitHub */}
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-2 rounded-lg  bg-blue-600 border border-slate-700 px-5 py-2.5 text-sm font-medium text-slate-200 transition duration-300 hover:border-blue-500 hover:text-blue-500"
+                  className="flex items-center gap-2 rounded-lg bg-blue-600 border border-blue-600 px-5 py-2.5 text-sm font-medium text-white transition duration-300 hover:bg-blue-700"
                 >
                   <FiGithub size={17} />
                   GitHub
                 </a>
 
-                
-
+                {/* Live Demo */}
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-2 rounded-lg border border-slate-700 px-5 py-2.5 text-sm font-medium text-slate-200 transition duration-300 hover:border-blue-500 hover:text-blue-400"
+                  >
+                    <FiArrowUpRight size={17} />
+                    Live Demo
+                  </a>
+                )}
               </div>
-
             </div>
           ))}
-
         </div>
 
         {/* GitHub Button */}
         <div className="mt-14 text-center">
-
           <a
             href="https://github.com/Saira-akhtar"
             target="_blank"
@@ -293,9 +314,7 @@ const Projects = () => {
             <FiGithub size={18} />
             View More Projects
           </a>
-
         </div>
-
       </div>
     </section>
   );
